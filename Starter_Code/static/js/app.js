@@ -8,7 +8,7 @@ const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/
 //     // d3.json(url) - returns a Promise, if the Promise is successful then the response gets evaluated
 //     console.log(data); //outputting the data if request has been successful
 
-// Initial setup
+//Initial setup
 function init() {
 d3.json(url).then(function(data) {
     populatingDropdownMenu(data) ;
@@ -28,7 +28,7 @@ function populatingDropdownMenu(data) {
     }
 };
     
-//plot the bar chart
+//Plot the bar chart
 function plotBarChart(person) {
     console.log(person)
     // Extract the data for the selected person
