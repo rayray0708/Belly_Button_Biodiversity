@@ -29,7 +29,7 @@ function populatingDropdownMenu(data) {
 };
     
 //Plot the bar chart
-function plotBarChart(person) {
+function plotBarChart(person) { //person refers to data.samples[i]
     console.log(person)
     // Extract the data for the selected person
     let otu_ids = person.otu_ids;
@@ -54,7 +54,8 @@ function plotBarChart(person) {
 // Plot the bubble chart
 function plotBubbleChart (person) {
     console.log(person)
-    let otu_ids = person.otu_ids;
+    let otu_ids = person.otu_ids;//data.samples[i], the optionChanged() function will handle the changes
+    // e.g., person will be replaced with data.samples[1], data.samples[2], data.samples[3]
     let otu_labels = person.otu_labels;
     let sample_values = person.sample_values;
 
@@ -94,8 +95,12 @@ function optionChanged(value) {
         // console.log(data.metadata[0].id)
         // console.log(parseInt(value))
         // // Find the data for the selected person based on their ID
-        let selectedPerson = data.samples.find(person => person.id === value);
-        let selectedMetadata = data.metadata.find(person_metadata => person_metadata.id === parseInt(value));
+        let selectedPerson = data.samples.find(person => person.id === value);  //"person" refers to each record in data, 
+        //if each the record's id is the same as the value passed in the parameter, extract the samples data
+        let selectedMetadata = data.metadata.find(person_metadata => person_metadata.id === parseInt(value)); //"person_metadata"
+        // refers to each record in data, if each the record's id is the same as the value passed in the parameter, extract the metadata
+        // console.log(`This is the selected Person`);
+        // console.log(selectedPerson);
         // console.log(selectedPerson)
         plotBarChart(selectedPerson);
         displayMetadata(selectedMetadata);
