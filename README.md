@@ -1,5 +1,5 @@
 # Belly-button Challenge
-![Illustration of Belly Button Microbes]("https://robdunnlab.com/projects/belly-button-biodiversity/")
+![Illustration of Belly Button Microbes](https://robdunnlab.com/wp-content/uploads/microbes-sem.jpg)
 
 ## Description 
 In this challenge, I will build an interactive dashboard to explore the Belly Button Biodiversity datasetLinks to an external site., which catalogues the microbes that colonise human navels. 
