@@ -1,4 +1,4 @@
-# Belly-button Challenge
+# belly-button-challenge
 ![Illustration of Belly Button Microbes](https://robdunnlab.com/wp-content/uploads/microbes-sem.jpg)
 
 ## Description 
