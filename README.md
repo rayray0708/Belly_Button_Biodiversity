@@ -11,5 +11,7 @@ To see the interactive dashboard, please download the "belly-button-challenge" d
 
 ## Contribution 
 Special thanks to the following individuals for their contribution:
+
 -Camilo Vargas (Instructor team)
+
 -Learning assistants BCS
