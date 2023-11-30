@@ -1,4 +1,4 @@
-# belly-button-challenge
+# Belly-button-biodiversity
 ![Illustration of Belly Button Microbes](https://robdunnlab.com/wp-content/uploads/microbes-sem.jpg)
 
 ## Description 
